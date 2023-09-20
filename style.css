@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Azeret Mono', monospace;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #111;
+  color: #eee;
+}
+
+.wrapper{
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 610px;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.container h1 {
+  font-size: clamp(1.7rem, 3.5vw, 2.2rem);
+  width: 100%;
+  text-align: center;
+}
+
+#encryption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+#encryption h5 {
+  font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+  font-weight: 500;
+  color: #eee;
+  width: 100%;
+}
+
+#encryption .text-message {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #343434;
+  background-color: #1c1c1c;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+#encryption .btn {
+  border: none;
+  outline: none;
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #1c1c1c;
+  color: #eee;
+  font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+#encryption .btn:hover {
+  background-color: #333;
+}
+
+#result {
+  width: 100%;
+  /* min-height: clamp(60px, 1vw ,63px); */
+  min-height: 60px;
+  border: 1px solid #343434;
+  background-color: #1c1c1c;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  outline: none;
+  margin-block: 0rem 2rem;
+  word-break: break-all;
+  letter-spacing: 5px;
+}
+
+.error-message{
+    color: palevioletred;
+    letter-spacing: 0;
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+}
+
+@media(max-width:600px){
+
+    #encryption{
+        width: 90%;
+    }
+}
